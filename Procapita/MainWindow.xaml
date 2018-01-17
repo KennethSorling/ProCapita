@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Procapita"
         mc:Ignorable="d"
+        WindowState="Maximized"
         Title="Procapita VoO - Robin Bitoreq" Height="480" Width="640" Icon="Resource/procapita.ico">
     <Window.Resources>
         <Style TargetType="{x:Type TreeViewItem}">
@@ -202,7 +203,7 @@
                     </StackPanel>
                     <ToolBar Height="32" ToolBarTray.IsLocked="True">
                         <Label Width="60">Person</Label>
-                        <TextBox Width="26" Height="26" BorderBrush="DarkGray">19</TextBox>
+                        <TextBox Name="txtYear" Width="26" Height="26" BorderBrush="DarkGray">19</TextBox>
                         <TextBox Width="120" Height="26" BorderBrush="DarkGray" Margin="10,0,10,0" Name="txtPersonNr" TextChanged="txtPersonNr_TextChanged"></TextBox>
                         <Border  BorderBrush="DarkGray" CornerRadius="3,3,3,3">
                             <Button Width="26" Height="26" Name="btnSearchByPersonalNumber" Click="btnSearchByPersonalNumber_Click">

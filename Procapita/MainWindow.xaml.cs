@@ -20,10 +20,14 @@ namespace Procapita
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int CurrentState=0;
+
         public MainWindow()
         {
             InitializeComponent();
         }
+
+
 
         private void txtPersonNr_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -32,11 +36,19 @@ namespace Procapita
 
         private void btnSearchByPersonalNumber_Click(object sender, RoutedEventArgs e)
         {
-            int i = 0;
-            int j = 4;
 
             try
             {
+                string pNumber = txtPersonNr.Text;
+                if (pNumber.Length==11) pNumber = txtYear.Text.ToString() + pNumber;
+                if (pNumber.Equals("19391025-7246"))
+                {
+                    //MessageBox.Show("Kund Kundsson!");
+                }
+                else
+                {
+                    //MessageBox.Show("Brukare hittades inte!", "Inga Resultat");
+                }
                 tvUsers.Items.Clear();
             }
             catch (Exception Ex)
