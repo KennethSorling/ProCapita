@@ -203,23 +203,25 @@
                     <ToolBar Height="32" ToolBarTray.IsLocked="True">
                         <Label Width="60">Person</Label>
                         <TextBox Width="26" Height="26" BorderBrush="DarkGray">19</TextBox>
-                        <TextBox Width="120" Height="26" BorderBrush="DarkGray" Margin="10,0,10,0" Name="txtPersonNr"></TextBox>
-                        <Button Width="26" Height="26" BorderBrush="DarkGray">
-                            <Image Width="20" Height="20" Source="Resource/binoculars.ico"></Image>
-                        </Button>
+                        <TextBox Width="120" Height="26" BorderBrush="DarkGray" Margin="10,0,10,0" Name="txtPersonNr" TextChanged="txtPersonNr_TextChanged"></TextBox>
+                        <Border  BorderBrush="DarkGray" CornerRadius="3,3,3,3">
+                            <Button Width="26" Height="26" Name="btnSearchByPersonalNumber" Click="btnSearchByPersonalNumber_Click">
+                                <Image Width="20" Height="20" Source="Resource/binoculars.ico"></Image>
+                            </Button>
+                        </Border>
                         <Image Source="Resource/blackbell.ico"></Image>
                     </ToolBar>                            
 
                 </Grid>
-                <StatusBar Grid.Column="0" DockPanel.Dock="Bottom">
-                    <StatusBarItem Width="100">Syvosan</StatusBarItem>
-                    <StatusBarItem>Genomförandeplansroll</StatusBarItem>
+                <StatusBar Name="sbStatus" Grid.Column="0" DockPanel.Dock="Bottom">
+                    <StatusBarItem Name="sbiCurrentUser" Width="100">RobBit</StatusBarItem>
+                    <StatusBarItem Name="sbiCurrentRole">Handläggare</StatusBarItem>
                 </StatusBar>
 
                 <Button DockPanel.Dock="Bottom" Height="30">Mina Sidor</Button>
                 <Button DockPanel.Dock="Bottom" Height="30">Mina Brukare</Button>
-                <Button DockPanel.Dock="Bottom" Height="30">Vart Tog Jag Vägen?</Button>
-                <TreeView >
+                <Button DockPanel.Dock="Bottom" Height="30">Mina Ärenden</Button>
+                <TreeView Name="tvUsers">
                     <TreeViewItem IsExpanded="True" Header="Mina Brukare">
                         <TreeViewItem Header="Observera">
                             

@@ -24,5 +24,25 @@ namespace Procapita
         {
             InitializeComponent();
         }
+
+        private void txtPersonNr_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void btnSearchByPersonalNumber_Click(object sender, RoutedEventArgs e)
+        {
+            int i = 0;
+            int j = 4;
+
+            try
+            {
+                tvUsers.Items.Clear();
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            };
+        }
     }
 }
