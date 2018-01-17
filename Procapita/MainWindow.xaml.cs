@@ -56,7 +56,7 @@ namespace Procapita
                 if (pNumber.Length==11) pNumber = txtYear.Text.ToString() + pNumber;
                 if (pNumber.Equals("19391025-7246"))
                 {
-                    SwitchState(1);
+                    this.Title = "Procapita VoO " + pNumber + " - Kundsson, Kund";
                     //MessageBox.Show("Kund Kundsson!");
                 }
                 else
@@ -69,6 +69,26 @@ namespace Procapita
             {
                 MessageBox.Show(Ex.Message);
             };
+        }
+
+        private void tglMyUsers_Checked(object sender, RoutedEventArgs e)
+        {
+            tglMyPages.IsChecked = false;
+            tglMyCases.IsChecked = false;
+            
+            
+        }
+
+        private void tglMyPages_Checked(object sender, RoutedEventArgs e)
+        {
+            tglMyUsers.IsChecked = false;
+            tglMyCases.IsChecked = false;
+        }
+
+        private void tglMyCases_Checked(object sender, RoutedEventArgs e)
+        {
+            tglMyPages.IsChecked = false;
+            tglMyUsers.IsChecked = false;
         }
     }
 }

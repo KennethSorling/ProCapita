@@ -181,7 +181,7 @@
             </Button>
 
         </ToolBar>
-        <Grid>
+        <Grid Name="grdMain">
             <Grid.ColumnDefinitions>
             <ColumnDefinition Width="350" />
             <ColumnDefinition Width="5" />
@@ -219,9 +219,9 @@
                     <StatusBarItem Name="sbiCurrentRole">Handläggare</StatusBarItem>
                 </StatusBar>
 
-                <Button DockPanel.Dock="Bottom" Height="30">Mina Sidor</Button>
-                <Button DockPanel.Dock="Bottom" Height="30">Mina Brukare</Button>
-                <Button DockPanel.Dock="Bottom" Height="30">Mina Ärenden</Button>
+                <ToggleButton Name="tglMyPages" DockPanel.Dock="Bottom" Height="30" Checked="tglMyPages_Checked">Mina Sidor</ToggleButton>
+                <ToggleButton Name="tglMyUsers" DockPanel.Dock="Bottom" Height="30" Checked="tglMyUsers_Checked">Mina Brukare</ToggleButton>
+                <ToggleButton Name="tglMyCases" DockPanel.Dock="Bottom" Height="30" Checked="tglMyCases_Checked">Mina Ärenden</ToggleButton>
                 <TreeView Name="tvUsers">
                     <TreeViewItem IsExpanded="True" Header="Mina Brukare">
                         <TreeViewItem Header="Observera">
@@ -248,7 +248,38 @@
             </DockPanel>
             <GridSplitter Grid.Column="1" Width="5" HorizontalAlignment="Stretch" />
             <TextBlock Grid.Column="2" FontSize="55" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap">Right side</TextBlock>
-
+            <TabControl Name="tabRight" Grid.Column="2">
+                <TabItem Name="tbiAktuellt"  Header="Aktuellt">
+                    <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left">
+                        <Span Name="spnCurrentDate"><Bold><Underline>Torsdag, 18 Januari 2018</Underline></Bold></Span>
+                        <LineBreak></LineBreak>
+                        <LineBreak></LineBreak>
+                        <Span><Bold><Underline>Anteckningar    (0)</Underline></Bold></Span>
+                        <LineBreak></LineBreak>
+                        <LineBreak></LineBreak>
+                        <Span><Bold><Underline>Nya Meddelanden    (0)</Underline></Bold></Span>
+                        <LineBreak></LineBreak>
+                        <LineBreak></LineBreak>
+                        <Span><Bold><Underline>Bevakningar    (0)</Underline></Bold></Span>
+                        <LineBreak></LineBreak>
+                        <LineBreak></LineBreak>
+                        <Span><Bold><Underline>Ej Signerad dokumentation</Underline></Bold></Span>
+                        <LineBreak></LineBreak>
+                        <LineBreak></LineBreak>
+                        <Span><Bold><Underline>Ny dokumentation på mina personer</Underline></Bold></Span>
+                        <LineBreak></LineBreak>
+                        <LineBreak></LineBreak>
+                        <Span><Bold><Underline>Anteckningar    (0)</Underline></Bold></Span>
+                        <LineBreak></LineBreak>
+                        <LineBreak></LineBreak>
+                        
+                        <Run>Lorem Ipsum lorem lorem flippin' Lorem Where's my text file full of Greeking when I neeed it? Lorem Lorem and so bloody on.</Run>
+                    </TextBlock>
+                </TabItem>
+                <TabItem Header="Some Other Tab">
+                    <TextBlock>To be Defined...</TextBlock>
+                </TabItem>
+            </TabControl>
         </Grid>
     </DockPanel>
 </Window>
