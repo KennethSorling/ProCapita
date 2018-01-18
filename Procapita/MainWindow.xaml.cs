@@ -20,14 +20,27 @@ namespace Procapita
     /// </summary>
     public partial class MainWindow : Window
     {
-        private int CurrentState=0;
+        private int currentState=0;
 
         public MainWindow()
         {
             InitializeComponent();
         }
 
+        private void SwitchState(int newState) {
+            switch (newState) {
+                case 0: // just logged on. Mina Sidor is displaying
+                    break;
+                case 1: // after selecting Mina Brukare
+                    break;
+                case 2: // successfully sought someone. Their info is displaying
+                    break;
+                default:
+                    break;
+            }
 
+            currentState = newState;
+        }
 
         private void txtPersonNr_TextChanged(object sender, TextChangedEventArgs e)
         {
