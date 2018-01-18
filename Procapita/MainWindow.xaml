@@ -276,8 +276,18 @@
                         <Run>Lorem Ipsum lorem lorem flippin' Lorem Where's my text file full of Greeking when I neeed it? Lorem Lorem and so bloody on.</Run>
                     </TextBlock>
                 </TabItem>
-                <TabItem Header="Some Other Tab">
-                    <TextBlock>To be Defined...</TextBlock>
+                <TabItem Header="Beslut">
+                    <Grid Background="#f1f1f1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="928"></ColumnDefinition>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="517"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        
+                        <Image Source="/Resource/besluttab.png" Grid.Column="0" Width="928"></Image>
+                    </Grid>
                 </TabItem>
             </TabControl>
         </Grid>

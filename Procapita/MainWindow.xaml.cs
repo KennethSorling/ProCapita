@@ -45,6 +45,7 @@ namespace Procapita
                 {
                     this.Title = "Procapita VoO " + pNumber + " - Kundsson, Kund";
                     //MessageBox.Show("Kund Kundsson!");
+                    tabRight.SelectedIndex = tabRight.Items.Count - 1;
                 }
                 else
                 {
