@@ -59,12 +59,28 @@ namespace Procapita
                     this.Title = "Procapita VoO " + pNumber + " - Kundsson, Kund";
                     //MessageBox.Show("Kund Kundsson!");
                     tabRight.SelectedIndex = tabRight.Items.Count - 1;
+                    
+                    tvUsers.Items.Clear();
+                    var root = new TreeViewItem();
+                    root.Header="Mina Brukare";
+                    root.IsExpanded=true;
+                    root.Items.Add(new TreeViewItem{Header="Observera"});
+                    root.Items.Add(new TreeViewItem{Header="SOL"});
+                    var lss = new TreeViewItem {Header="LSS"};
+                    lss.IsExpanded=true;
+                    lss.Items.Add(new TreeViewItem{Header="LSS Ledsagarservice 140424 -"});
+                    lss.Items.Add(new TreeViewItem{Header="LSS Boende m särskild service 140401 -"});
+                    root.Items.Add(lss);
+                    root.Items.Add(new TreeViewItem{Header="LASS"});
+                    root.Items.Add(new TreeViewItem{Header="Person"});
+                    root.Items.Add(new TreeViewItem{Header="Vård och omsorgsplan"});
+                    tvUsers.Items.Add(root);
+                    
                 }
                 else
                 {
                     //MessageBox.Show("Brukare hittades inte!", "Inga Resultat");
                 }
-                tvUsers.Items.Clear();
             }
             catch (Exception Ex)
             {

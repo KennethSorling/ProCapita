@@ -223,25 +223,15 @@
                 <ToggleButton Name="tglMyUsers" DockPanel.Dock="Bottom" Height="30" Checked="tglMyUsers_Checked">Mina Brukare</ToggleButton>
                 <ToggleButton Name="tglMyCases" DockPanel.Dock="Bottom" Height="30" Checked="tglMyCases_Checked">Mina Ärenden</ToggleButton>
                 <TreeView Name="tvUsers">
-                    <TreeViewItem IsExpanded="True" Header="Mina Brukare">
-                        <TreeViewItem Header="Observera">
-                            
+                    <TreeViewItem IsExpanded="True" Header="Mina Sidor">
+                        <TreeViewItem Header="Kundstöd Procapita LSS">
+                          <TreeViewItem></TreeViewItem>
                         </TreeViewItem>
-                        <TreeViewItem Header="Smitta">
-                            
+                        <TreeViewItem Header="Om Procapita">
+                          <TreeViewItem></TreeViewItem>
                         </TreeViewItem>
-                        <TreeViewItem Header="SoL">
+                        <TreeViewItem Header="Aktuellt" IsSelected="True">
                         </TreeViewItem>
-                        <TreeViewItem IsExpanded="True" Header="LSS">
-                        </TreeViewItem>
-                        <TreeViewItem Header="LASS">
-                        </TreeViewItem>
-                        <TreeViewItem Header="Person">
-                        </TreeViewItem>
-                        <TreeViewItem Header="Vård och Omsorgsplan">
-                        </TreeViewItem>
-
-
                     </TreeViewItem>
                         
                 </TreeView>
