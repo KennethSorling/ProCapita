@@ -42,11 +42,6 @@ namespace Procapita
             currentState = newState;
         }
 
-        private void txtPersonNr_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
         private void btnSearchByPersonalNumber_Click(object sender, RoutedEventArgs e)
         {
 
@@ -57,7 +52,6 @@ namespace Procapita
                 if (pNumber.Equals("19391025-7246"))
                 {
                     this.Title = "Procapita VoO " + pNumber + " - Kundsson, Kund";
-                    //MessageBox.Show("Kund Kundsson!");
                 }
                 else
                 {
