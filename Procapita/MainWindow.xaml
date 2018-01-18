@@ -267,13 +267,7 @@
                         <LineBreak></LineBreak>
                         <LineBreak></LineBreak>
                         <Span><Bold><Underline>Ny dokumentation på mina personer</Underline></Bold></Span>
-                        <LineBreak></LineBreak>
-                        <LineBreak></LineBreak>
-                        <Span><Bold><Underline>Anteckningar    (0)</Underline></Bold></Span>
-                        <LineBreak></LineBreak>
-                        <LineBreak></LineBreak>
                         
-                        <Run>Lorem Ipsum lorem lorem flippin' Lorem Where's my text file full of Greeking when I neeed it? Lorem Lorem and so bloody on.</Run>
                     </TextBlock>
                 </TabItem>
                 <TabItem Header="Beslut">
