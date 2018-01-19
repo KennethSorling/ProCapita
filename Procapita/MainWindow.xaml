@@ -119,21 +119,11 @@
                         <TreeViewItem Header="Observera">
                             
                         </TreeViewItem>
-                        <TreeViewItem Header="Smitta">
-                            
+                        <TreeViewItem Header="Om Procapita">
+                          <TreeViewItem></TreeViewItem>
                         </TreeViewItem>
-                        <TreeViewItem Header="SoL">
+                        <TreeViewItem Header="Aktuellt" IsSelected="True">
                         </TreeViewItem>
-                        <TreeViewItem IsExpanded="True" Header="LSS">
-                        </TreeViewItem>
-                        <TreeViewItem Header="LASS">
-                        </TreeViewItem>
-                        <TreeViewItem Header="Person">
-                        </TreeViewItem>
-                        <TreeViewItem Header="Vård och Omsorgsplan">
-                        </TreeViewItem>
-
-
                     </TreeViewItem>
                         
                 </TreeView>
