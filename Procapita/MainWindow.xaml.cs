@@ -56,7 +56,7 @@ namespace Procapita
                 if (pNumber.Length==11) pNumber = txtYear.Text.ToString() + pNumber;
                 if (pNumber.Equals("19391025-7246"))
                 {
-                    this.Title = "Procapita VoO " + pNumber + " - Kundsson, Kund";
+                    this.Title = "Stödsystem VoO - " + pNumber + " - Kundsson, Kund";
                     //MessageBox.Show("Kund Kundsson!");
                     tabRight.SelectedIndex = tabRight.Items.Count - 1;
                     
@@ -68,7 +68,7 @@ namespace Procapita
                     root.Items.Add(new TreeViewItem{Header="SOL"});
                     var lss = new TreeViewItem {Header="LSS"};
                     lss.IsExpanded=true;
-                    lss.Items.Add(new TreeViewItem{Header="LSS Ledsagarservice 140424 -"});
+                    lss.Items.Add(new TreeViewItem{Header="LSS Ledsagarservice 160630 -", IsSelected=true});
                     lss.Items.Add(new TreeViewItem{Header="LSS Boende m särskild service 140401 -"});
                     root.Items.Add(lss);
                     root.Items.Add(new TreeViewItem{Header="LASS"});

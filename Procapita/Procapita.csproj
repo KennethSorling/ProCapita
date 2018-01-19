@@ -143,6 +143,9 @@
   <ItemGroup>
     <Resource Include="Resource\besluttab.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\stodsystem.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>copy /Y "$(TargetPath)" "%25APPDATA%25\Bitoreq AB\KoPerNiKus\$(TargetFileName)"

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Procapita"
         mc:Ignorable="d"
         WindowState="Maximized"
-        Title="Procapita VoO - Robin Bitoreq" Height="480" Width="640" Icon="Resource/procapita.ico">
+        Title="Stödsystem, Vård och Omsorg - Robin Bitoreq" Height="480" Width="640" Icon="Resource/stodsystem.ico">
     <Window.Resources>
 
 
